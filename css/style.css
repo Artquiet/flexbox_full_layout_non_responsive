@@ -1,8 +1,131 @@
-body {
-    background-color: black;
-    color: white;
+/* css reset */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul li {
+ul {
     list-style-type: none;
+}
+
+/* common property */
+body {
+    background-color: palevioletred;
+    color: black;
+    font-size: 2em;
+    font-weight: bolder;
+    height: 100vh;
+}
+
+/* general disposition flexbox */
+
+main {
+    display: inline-flex;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: palegoldenrod;
+    height: 15vh;
+    flex-basis: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: palegreen;
+    height: 75vh;
+    width: 10vw;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: paleturquoise;
+    width: 40vw;
+    height: 75vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: palevioletred;
+    height: 10vh;
+    flex-basis: 1;
+}
+
+p {
+    padding: 5px;
+    height: 35%;
+}
+
+/* header disposition  */
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    width: 40%;
+}
+
+header span {
+    color: darkcyan;
+    background-color: darkolivegreen;
+    border: 1px solid darkolivegreen;
+    border-radius: 5px;
+    padding: 5px 15px
+}
+
+header span:hover {
+    color: darkolivegreen;
+    border: 1px solid darkcyan;
+    background-color: darkcyan;
+}
+
+/* footer disposition  */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 36px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35%;
+    width: 30%;
+}
+
+footer span {
+    background-color: blueviolet;
+    font-size: 28px;
+    padding: 5px 10px;
+    margin: auto 35px;
+    border-radius: 5px;
+}
+
+footer span:hover {
+    background-color: darkorange;
+    color: lightblue;
 }
