@@ -13,11 +13,9 @@ ul {
 
 /* common property */
 body {
-    background-color: palevioletred;
     color: black;
     font-size: 2em;
     font-weight: bolder;
-    height: 100vh;
 }
 
 /* general disposition flexbox */
@@ -30,16 +28,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: palegoldenrod;
     height: 15vh;
+    width: auto;
     flex-basis: 1;
 }
 
 nav {
+    font-size: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: palegreen;
     height: 75vh;
     width: 10vw;
@@ -49,7 +50,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     background-color: paleturquoise;
-    width: 40vw;
+    width: 39.55vw;
     height: 75vh;
 }
 
@@ -66,21 +67,29 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: palevioletred;
-    height: 10vh;
+    width: auto;
+    height: 15vh;
     flex-basis: 1;
 }
 
 p {
     padding: 5px;
-    height: 35%;
+    height: 10%;
+    text-decoration: underline;
+}
+
+header,
+nav,
+article,
+footer {
+    border: #333 solid 1px;
 }
 
 /* header disposition  */
 
 header div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     height: 40%;
     width: 40%;
 }
@@ -90,6 +99,7 @@ header span {
     background-color: darkolivegreen;
     border: 1px solid darkolivegreen;
     border-radius: 5px;
+    margin: auto 5px;
     padding: 5px 15px
 }
 
@@ -121,7 +131,7 @@ footer span {
     background-color: blueviolet;
     font-size: 28px;
     padding: 5px 10px;
-    margin: auto 35px;
+    margin: auto 5px;
     border-radius: 5px;
 }
 
@@ -129,3 +139,41 @@ footer span:hover {
     background-color: darkorange;
     color: lightblue;
 }
+
+/* Nav disposition  */
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 65%;
+    width: 75%;
+}
+
+nav div span {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(59, 0, 43);
+    color: rgb(249, 166, 78);
+    border-radius: 10px;
+    height: 10%;
+    width: 75%;
+    padding: 5px 8px;
+}
+
+nav div span:hover {
+    background-color: rgb(157, 0, 115);
+
+}
+
+/* First article disposition  */
+
+
+/* Second article disposition  */
+
+
+/* Third article disposition  */
+
+
+/* Four article disposition  */
