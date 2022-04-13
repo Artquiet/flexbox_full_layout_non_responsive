@@ -31,7 +31,7 @@ header {
     justify-content: space-around;
     background-color: palegoldenrod;
     height: 15vh;
-    width: auto;
+    width: 100vw;
     flex-basis: 1;
 }
 
@@ -42,7 +42,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     background-color: palegreen;
-    height: 75vh;
+    height: 70vh;
     width: 10vw;
 }
 
@@ -50,15 +50,17 @@ section {
     display: flex;
     flex-wrap: wrap;
     background-color: paleturquoise;
-    width: 39.55vw;
-    height: 75vh;
+    width: 40vw;
+    height: 70vh;
 }
 
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 40vw;
+    height: 35vh;
     font-size: 0.8em;
 }
 
@@ -67,7 +69,7 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: palevioletred;
-    width: auto;
+    width: 100vw;
     height: 15vh;
     flex-basis: 1;
 }
@@ -164,16 +166,179 @@ nav div span {
 
 nav div span:hover {
     background-color: rgb(157, 0, 115);
+}
 
+/* general section style */
+
+article div {
+    background-color: rgb(29, 92, 86);
+}
+
+article span {
+    background-color: rgb(59, 0, 43);
 }
 
 /* First article disposition  */
+section:first-of-type article:first-of-type div {
+    display: flex;
+    width: 300px;
+    height: 150px;
+}
 
+section:first-of-type article:first-of-type div span {
+    display: flex;
+    width: 60px;
+    height: 50px;
+}
+
+section:first-of-type article:first-of-type div span:first-child {
+    align-self: center;
+}
+
+section:first-of-type article:first-of-type div span:nth-child(2) {
+    height: 100px;
+}
+
+section:first-of-type article:first-of-type div span:nth-child(3) {
+    align-self: end;
+}
+
+section:first-of-type article:first-of-type div span:last-child {
+    align-self: end;
+}
 
 /* Second article disposition  */
 
+section:first-of-type article:last-of-type div {
+    display: flex;
+    width: 300px;
+    height: 150px;
+}
+
+section:first-of-type article:last-of-type div span {
+    display: flex;
+    width: 75px;
+    height: 50px;
+}
+
+section:first-of-type article:last-of-type div span:first-child {
+    height: 50px;
+    align-self: center;
+}
+
+section:first-of-type article:last-of-type div span:nth-child(2) {
+    height: 100px;
+
+}
+
+section:first-of-type article:last-of-type div span:nth-child(3) {
+    height: 50px;
+    align-self: end;
+}
+
+section:first-of-type article:last-of-type div span:last-child {
+    height: 100px;
+    align-self: center;
+}
 
 /* Third article disposition  */
 
+section:last-of-type article:first-of-type div {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 250px;
+}
+
+section:last-of-type article:first-of-type div:first-of-type aside {
+    display: flex;
+    flex-direction: column;
+    color: paleturquoise;
+}
+
+section:last-of-type article:first-of-type div aside span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    height: 50px;
+    width: 50px;
+}
+
+section:last-of-type article:first-of-type div aside:last-of-type span:first-child {
+    display: flex;
+    order: 3;
+}
+
+section:last-of-type article:first-of-type div aside:last-of-type span:nth-child(2) {
+    display: flex;
+    order: 2;
+}
+
+section:last-of-type article:first-of-type div aside:last-of-type span:nth-child(3) {
+    display: flex;
+    order: 5;
+}
+
+section:last-of-type article:first-of-type div aside:last-of-type span:nth-child(4) {
+    display: flex;
+    order: 4;
+}
+
+section:last-of-type article:first-of-type div aside:last-of-type span:last-child {
+    display: flex;
+    order: 1;
+}
 
 /* Four article disposition  */
+
+section:last-of-type article:last-of-type div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 280px;
+    height: 140px;
+}
+
+section:last-of-type article:last-of-type div aside {
+    display: flex;
+    width: 280px;
+    height: 45px;
+}
+
+section:last-of-type article:last-of-type div aside span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: paleturquoise;
+    border: 1px solid #333;
+    width: 40px;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:first-child {
+    order: 5;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:nth-child(2) {
+    order: 1;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:nth-child(3) {
+    order: 4;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:nth-child(4) {
+    order: 3;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:nth-child(5) {
+    order: 7;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:nth-child(6) {
+    order: 6;
+}
+
+section:last-of-type article:last-of-type div aside:last-of-type span:last-child {
+    order: 2;
+}
